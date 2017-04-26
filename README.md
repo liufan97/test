@@ -18,16 +18,27 @@
     
 #  3.遍历HashMap的两种方式
     （1）Map map = new HashMap();
+    
         Iterator it = map.entrySet().iterator();//entrySet() 返回key所有key-value对组成的Set集合
+        
         while(it.hasNext()){
+        
             Map.Entry en = (Map.Entry)it.next();
+            
             Object key = entry.getKey();
+            
             Object val = entry.getValue();
+            
         }
       (2)Map map = new HashMap();
+      
          Iterator it = map.keySet().iterator();//keySet() 返回该Map里所有的Set集合
+         
          while(it.hasNext()){
+         
             Object key = it.next();
+            
             Object val = map.get(key);//get(key);返回指定键所映射的值；如果此映射不包含该键的映射关系，则返回 null。
+            
          }
 
