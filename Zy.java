@@ -1,4 +1,4 @@
-//.javaµÄÎÄ¼ş
+//æŸ¥çœ‹æ–‡ä»¶å¤¹ä¸­.javaçš„æ–‡ä»¶
 package Shiyan;
 import java.io.*;
 public class Zy {
@@ -8,13 +8,13 @@ public class Zy {
 		ff(f);
 	}
 	public static void ff(File f){
-		if(f.isDirectory()){//²âÊÔ´Ë³éÏóÂ·¾¶Ãû±íÊ¾µÄÎÄ¼şÊÇ·ñÊÇÒ»¸öÄ¿Â¼
-			File[] fi = f.listFiles();//·µ»ØÒ»¸ö³éÏóÂ·¾¶ÃûÊı×é£¬ÕâĞ©Â·¾¶Ãû±íÊ¾´Ë³éÏóÂ·¾¶Ãû±íÊ¾µÄÄ¿Â¼ÖĞµÄÎÄ¼ş¡£
+		if(f.isDirectory()){//æµ‹è¯•æ­¤æŠ½è±¡è·¯å¾„åè¡¨ç¤ºçš„æ–‡ä»¶æ˜¯å¦æ˜¯ä¸€ä¸ªç›®å½•
+			File[] fi = f.listFiles();//è¿”å›ä¸€ä¸ªæŠ½è±¡è·¯å¾„åæ•°ç»„ï¼Œè¿™äº›è·¯å¾„åè¡¨ç¤ºæ­¤æŠ½è±¡è·¯å¾„åè¡¨ç¤ºçš„ç›®å½•ä¸­çš„æ–‡ä»¶ã€‚
 			for(File fq:fi){
 				ff(fq);
 			}
 		}else if(f.getName().endsWith("java")){
-			System.out.println(f.getAbsolutePath());// ·µ»Ø´Ë³éÏóÂ·¾¶ÃûµÄ¾ø¶ÔÂ·¾¶Ãû×Ö·û´®¡£
+			System.out.println(f.getAbsolutePath());// è¿”å›æ­¤æŠ½è±¡è·¯å¾„åçš„ç»å¯¹è·¯å¾„åå­—ç¬¦ä¸²ã€‚
 		}
 	}
 
