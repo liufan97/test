@@ -1,4 +1,3 @@
-
 # 1.HashMap和Hashtable区别
 
     Hashtable  线程安全	不准使用null 
@@ -18,7 +17,8 @@
     
     
 #  3.遍历HashMap的两种方式
-    （1）Map map = new HashMap();
+
+    (1) Map map = new HashMap();
     
         Iterator it = map.entrySet().iterator();//entrySet() 返回key所有key-value对组成的Set集合
         
@@ -31,9 +31,9 @@
             Object val = entry.getValue();
             
         }
-        
-     （2）Map map = new HashMap();
-      
+ 
+    （2）Map map = new HashMap();
+    
          Iterator it = map.keySet().iterator();//keySet() 返回该Map里所有的Set集合
          
          while(it.hasNext()){
