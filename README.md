@@ -1,3 +1,4 @@
+
 # 1.HashMap和Hashtable区别
 
     Hashtable  线程安全	不准使用null 
@@ -30,7 +31,8 @@
             Object val = entry.getValue();
             
         }
-      (2)Map map = new HashMap();
+        
+      (2) Map map = new HashMap();
       
          Iterator it = map.keySet().iterator();//keySet() 返回该Map里所有的Set集合
          
